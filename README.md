@@ -147,4 +147,43 @@ JOIN (
 GROUP BY o.teleworking
 ORDER BY promedio_skills_pedidas DESC;
 ```
+## 📊 Paso 3: Visualización e Insights (Power BI)
+El informe final consta de 3 páginas interactivas diseñadas en Dark Mode para resaltar la visualización de datos complejos y mejorar la experiencia de usuario.
 
+### 📄 Página 1: Visión General
+
+* **Sankey Chart:** Visualización de grafos que muestra clústeres tecnológicos. Permite observar cómo SQL actúa como el nexo conector entre herramientas de BI y Lenguajes de Programación.
+
+* **KPIs:** Indicadores clave como Total de ofertas, Top Skill del mercado y % de adopción de teletrabajo / híbrido.
+
+* **DAX:** Medidas personalizadas para calcular rankings dinámicos y porcentajes de trabajo flexible.
+
+```dax
+Top Skill =
+VAR TopSkillTable = TOPN(1, VALUES('fact_skills'[skill]), CALCULATE(COUNTROWS('fact_skills')))
+RETURN CONCATENATEX(TopSkillTable, 'fact_skills'[skill], ", ")
+```
+```dax
+% Trabajo Flexible = 
+VAR OfertasFlexibles = CALCULATE(
+    COUNTROWS('dim_ofertas'), 
+    'dim_ofertas'[teleworking] IN {"Híbrido", "Solo teletrabajo", "Teletrabajo"} 
+)
+VAR Total = COUNTROWS('dim_ofertas')
+RETURN
+    DIVIDE(OfertasFlexibles, Total, 0)
+```
+
+### 📄 Página 2: Análisis profundo
+
+* **Matriz de Calor:** Visualización de intensidad que cruza habilidades principales vs. secundarias.
+
+* **Análisis de Contratación:** Desglose detallado por tipo de contrato (Indefinido vs Temporal) y modalidad laboral además de proporción según la modalidad. 
+
+* **Detalle de Ofertas:** Tabla interactiva con iconos de URL para acceder directamente a la vacante original.
+
+### 📄 Página 3: Advanced Segmentation
+
+* **Índice de Exigencia:** Gráfico analítico que calcula el promedio de skills solicitadas por oferta según la modalidad (revelando, por ejemplo, que el trabajo presencial exige un perfil técnico más amplio).
+
+* **Categorización:** Agrupación mediante SQL (CASE WHEN) para clasificar skills en segmentos como "Cloud", "Visualización", "Ingeniería", etc.
