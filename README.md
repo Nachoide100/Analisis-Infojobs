@@ -5,7 +5,8 @@
 ![Power BI](https://img.shields.io/badge/Power_BI-Desktop-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-> **Un análisis End-to-End del mercado laboral de datos en España.** > Desde la extracción de ofertas en tiempo real hasta la visualización de relaciones entre tecnologías.
+> **Un análisis End-to-End del mercado laboral de datos en España.** Un analista de datos analizando las ofertas de análisis de datos. ¿Podemos hablar de un metanálisis?
+> > Desde la extracción de ofertas en tiempo real hasta la visualización de relaciones entre tecnologías.
 
 ---
 
@@ -187,3 +188,22 @@ RETURN
 * **Índice de Exigencia:** Gráfico analítico que calcula el promedio de skills solicitadas por oferta según la modalidad (revelando, por ejemplo, que el trabajo presencial exige un perfil técnico más amplio).
 
 * **Categorización:** Agrupación mediante SQL (CASE WHEN) para clasificar skills en segmentos como "Cloud", "Visualización", "Ingeniería", etc.
+
+## 💡 Conclusiones y Aprendizajes
+
+Este proyecto ha permitido transformar una lista desordenada de ofertas de empleo en inteligencia de mercado accionable. Las principales conclusiones extraídas del análisis son:
+
+* **Excel, SQL y Power BI son el tridente estrella:** Independientemente de si el rol es de Analista, Ingeniero o Científico de datos, este trío aparece como el nexo conector en la mayoría de las ofertas, consolidándose como las habilidades técnicas no negociables.
+
+* **El ecosistema Python domina sobre R:** En el ámbito del análisis general y la ingeniería, Python se posiciona como el líder indiscutible, frecuentemente vinculado a tecnologías de Cloud (AWS/Azure).
+
+* **La "Prima" del trabajo presencial:** En contra de lo que pensaba a priori, el análisis de exigencia reveló que las ofertas con modalidad 100% presencial tienden a solicitar un mayor número de herramientas tecnológicas (hard skills) por oferta, sugiriendo la búsqueda de perfiles más senior.
+
+* **Validación Full-Stack:** A nivel técnico, este proyecto ha demostrado la capacidad de integrar Web Scraping (Python), Warehousing (SQL) y Business Intelligence (Power BI) en una solución cohesiva y automatizada.
+
+**!Solo queda encontrar un trabajo! Deseadme suerte :)**
+
+---
+Autor: **José Ignacio Rubio Cobeta**
+
+Contacto: [LinkedIn](https://www.linkedin.com/in/jos%C3%A9-ignacio-rubio-194471308/)
