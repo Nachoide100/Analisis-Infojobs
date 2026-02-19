@@ -194,6 +194,8 @@ RETURN
 
 ![informe3](https://github.com/Nachoide100/Analisis-Infojobs/blob/f4bde5fdab13dcb02604c86a762185ae62a529eb/visualizations/Captura%20de%20pantalla%202026-02-19%20084549.png)
 
+Para acceder al dashboard dinámico -> [Dashboard](https://drive.google.com/file/d/1ZgcloeSHly5srvH006VEJITivXVt21XY/view?usp=sharing)
+---
 ## 💡 Conclusiones y Aprendizajes
 
 Este proyecto ha permitido transformar una lista desordenada de ofertas de empleo en inteligencia de mercado accionable. Las principales conclusiones extraídas del análisis son:
