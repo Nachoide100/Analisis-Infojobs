@@ -174,6 +174,7 @@ VAR Total = COUNTROWS('dim_ofertas')
 RETURN
     DIVIDE(OfertasFlexibles, Total, 0)
 ```
+![informe1](https://github.com/Nachoide100/Analisis-Infojobs/blob/f4bde5fdab13dcb02604c86a762185ae62a529eb/visualizations/Captura%20de%20pantalla%202026-02-19%20084527.png)
 
 ### 📄 Página 2: Análisis profundo
 
@@ -183,11 +184,15 @@ RETURN
 
 * **Detalle de Ofertas:** Tabla interactiva con iconos de URL para acceder directamente a la vacante original.
 
+![informe2](https://github.com/Nachoide100/Analisis-Infojobs/blob/f4bde5fdab13dcb02604c86a762185ae62a529eb/visualizations/Captura%20de%20pantalla%202026-02-19%20084540.png)
+
 ### 📄 Página 3: Advanced Segmentation
 
 * **Índice de Exigencia:** Gráfico analítico que calcula el promedio de skills solicitadas por oferta según la modalidad (revelando, por ejemplo, que el trabajo presencial exige un perfil técnico más amplio).
 
 * **Categorización:** Agrupación mediante SQL (CASE WHEN) para clasificar skills en segmentos como "Cloud", "Visualización", "Ingeniería", etc.
+
+![informe3](https://github.com/Nachoide100/Analisis-Infojobs/blob/f4bde5fdab13dcb02604c86a762185ae62a529eb/visualizations/Captura%20de%20pantalla%202026-02-19%20084549.png)
 
 ## 💡 Conclusiones y Aprendizajes
 
